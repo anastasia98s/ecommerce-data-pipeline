@@ -7,7 +7,7 @@ from airflow.sdk import dag, task
 
 @dag(
     dag_id="ecommerce_etl",
-    schedule="@daily",
+    schedule= None,
     start_date=datetime(2025, 1, 1),
     catchup=False,
     tags=["ecommerce", "etl"],
